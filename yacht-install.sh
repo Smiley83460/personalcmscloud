@@ -42,7 +42,7 @@ msg_ok "Installed Docker Compose $DOCKER_COMPOSE_LATEST_VERSION"
 
 msg_info "Installing Yacht"
 mkdir -p /var/lib/yacht
-wget -q -O /var/lib/yacht/compose.yaml https://raw.githubusercontent.com/Smiley83460/personalcmscloud/refs/heads/main/compose/compose-yacht.yml
+wget -q -O /var/lib/yacht/compose.yaml https://raw.githubusercontent.com/Smiley83460/my-helper-script/refs/heads/main/compose/compose-yacht.yml
 cd /var/lib/yacht
 $STD docker compose up -d
 msg_ok "Installed Yacht"
