@@ -42,7 +42,7 @@ msg_ok "Installed Docker Compose $DOCKER_COMPOSE_LATEST_VERSION"
 
 msg_info "Installing Cosmos Cloud"
 mkdir -p /var/lib/cosmos
-wget -q -O /var/lib/cosmos/compose.yaml https://raw.githubusercontent.com/Smiley83460/personalcmscloud/refs/heads/main/docker-compose.yml
+wget -q -O /var/lib/cosmos/compose.yaml https://raw.githubusercontent.com/Smiley83460/personalcmscloud/refs/heads/main/compose/compose-cosmos.yml
 cd /var/lib/cosmos
 $STD docker compose up -d
 msg_ok "Installed Cosmos Cloud"
