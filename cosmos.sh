@@ -54,7 +54,8 @@ function default_settings() {
 
 function update_script() {
 header_info
-if [[ ! -d /var/lib/cosmos ]]; then msg_error "No ${APP} Installation Found!"; exit; fimsg_info "Updating ${APP}"
+if [[ ! -d /var/lib/cosmos ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
+msg_info "Updating ${APP}"
 cd /var/lib/cosmos
 docker compose pull
 docker compose up -d
